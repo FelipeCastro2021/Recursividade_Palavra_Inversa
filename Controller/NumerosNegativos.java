@@ -8,7 +8,7 @@ public class NumerosNegativos {
 	public int ContadorNegativos(int[] numeros, int contador) {
 		if (contador == 0) {
 			return 0;
-		} else {
+		} else { 
 			return numeros[contador - 1] < 0 ? 1 + ContadorNegativos(numeros, contador - 1) : ContadorNegativos(numeros, contador - 1);
 		}
 	}
